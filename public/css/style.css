@@ -1,0 +1,60 @@
+* {box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-size:14px;
+}
+h1,h4{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.container{
+    min-height: 600px;;
+}
+
+.modal-content{
+color:#fff;
+background: #32243c;
+}
+table{
+  width: 70%!important;
+  margin: auto;
+}
+table>thead{
+  background-color:#2b5171;
+  color:#fff;
+}
+
+button{
+  border: none;
+}
+.btn-cancel{
+padding:10px; 
+margin-left: -10px; 
+width:120px;
+}
+.btn-submit{
+  padding:10px; 
+  margin-left: -10px;
+  width:140px;
+}
+.btn-restore{
+  background: #1586e9;
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 14px;
+}
+.btn-delete {
+  background: #de0808;
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 14px;
+}
+.fa-trash{
+  color:#ef3b3b;
+}
