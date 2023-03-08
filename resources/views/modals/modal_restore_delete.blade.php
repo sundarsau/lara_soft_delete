@@ -20,8 +20,7 @@
                 <div class="row" style="margin-bottom: 50px; text-align: center;">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-3">
-                        <button type="button" class="btn btn-danger btn-cancel"
-                            data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger btn-cancel" data-bs-dismiss="modal">Cancel</button>
                     </div>
                     <div class="col-sm-3">
                         <button type="submit" class="btn btn-success btn-submit">Delete</button>
@@ -56,8 +55,7 @@
                 <div class="row" style="margin-bottom: 50px; text-align: center;">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-3">
-                        <button type="button" class="btn btn-danger btn-cancel"
-                            data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger btn-cancel" data-bs-dismiss="modal">Cancel</button>
                     </div>
                     <div class="col-sm-3">
                         <button type="submit" class="btn btn-success btn-submit">Yes Restore It</button>

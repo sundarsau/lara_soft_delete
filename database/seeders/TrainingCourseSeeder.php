@@ -33,8 +33,5 @@ class TrainingCourseSeeder extends Seeder
             'level'         => 'Intermediate',
             'duration'      => '2 weeks'
             ]);
-       
-
-       
     }
 }

@@ -37,7 +37,7 @@
                             <td>
                                 <button class="btn-restore" onClick="restoreFunction('{{ $row->id }}')"
                                     data-toggle="modal" data-target="#restoreModal">Restore</button>
-                                <button class="btn-delete" onClick="deleteFunction('{{ $row->id }}')"
+                                <button class="btn-delete" onClick="delConfirm('{{ $row->id }}')"
                                     data-toggle="modal" data-target="#deleteModal">Permanent Delete</i></button>
                             </td>
                         </tr>
@@ -51,9 +51,11 @@
         </div>
     </div>
 
-    @include('modals.modal_restore_delete')
+@include('modals.modal_restore_delete')
+@endsection
+@push('js')
     <script>
-        function deleteFunction(id) {
+        function delConfirm(id) {
             document.getElementById('delete_id').value = id;
             $("#deleteModal").modal('show');
         }
@@ -63,4 +65,5 @@
             $("#restoreModal").modal('show');
         }
     </script>
-@endsection
+@endpush
+

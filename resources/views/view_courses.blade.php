@@ -5,7 +5,7 @@
         <div class="text-end">
             <a href="{{ route('show.trashed') }}" class="btn btn-primary">View Trashed Data</a>
         </div>
-        
+
         <h4>List of Courses</h4>
         <div class="table-responsive">
             <table class="table table-striped table-bordered mt-5">
@@ -33,8 +33,8 @@
                             <td>{{ $row->level }}</td>
                             <td>{{ $row->duration }}</td>
                             <td>
-                                <button class="fa fa-trash" onClick="deleteFunction('{{ $row->id }}')"
-                                    data-toggle="modal" data-target="#deleteConfirm" title="Move to Trash"></button>
+                                <button class="fa fa-trash" onClick="trashConfirm('{{ $row->id }}')" data-toggle="modal"
+                                    data-target="#deleteConfirm" title="Move to Trash"></button>
                             </td>
                         </tr>
                     @empty
@@ -45,12 +45,14 @@
                 </tbody>
             </table>
         </div>
-        @include ('modals.modal_trash')
-
-        <script>
-            function deleteFunction(id) {
-                document.getElementById('delete_id').value = id;
-                $("#modalTrash").modal('show');
-            }
-        </script>
-    @endsection()
+@include ('modals.modal_trash')
+@endsection
+@push('js')
+    <script>
+        function trashConfirm(id) {
+            document.getElementById('delete_id').value = id;
+            $("#modalTrash").modal('show');
+        }
+    </script>
+@endpush
+  
