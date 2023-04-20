@@ -8,11 +8,7 @@ use Illuminate\Support\Facades\Session;
 
 class TrainingCourseController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+   
     public function index()
     {
         $courses = TrainingCourse::all();
