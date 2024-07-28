@@ -1,6 +1,6 @@
 # Soft Delete in Laravel 
 
-This Laravel application is to implement Soft Delete (Delete and restore). It uses Laravel 9 and MySQL. It displays a list of courses and option to move to trash. You view all trashed data with option to restore/permanent delete.
+This Laravel application is to implement Soft Delete (Delete and restore). It uses Laravel 9 and MySQL. It displays a list of courses and option to move to trash. You can view all trashed data with option to restore them or delete them permanently. Tutorial - https://codehow2.com/laravel/how-to-implement-soft-delete-in-laravel
 
 # How To Use
 
